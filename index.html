@@ -1,0 +1,91 @@
+
+<html>
+<head>
+<meta id="_moz_html_fragment">
+<style>
+body{
+background: url(b1.jpg)no-repeat center top;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<div style="text-align: center;"><br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-weight:bold;color:white">HOSPITAL MANAGEMENT SYSTEM<h2>
+<br>
+<br>
+<form method="post" action="login.php">
+<center>
+<table width="30%">
+<tbody>
+<tr>
+<td style="text-align: right;font-weight:bold;color:white">USERNAME<br>
+</td>
+<td><input name="username" type="text"><br>
+</td>
+</tr>
+<tr>
+<td style="text-align: right;font-weight:bold;color:white;">PASSWORD<br>
+</td>
+<td><input name="password" type="password"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<button class="button" style="vertical-align:middle"><span>LOGIN </span></button>
+</form>
+<br><br>
+<form method="post" action="register.html">
+<button class="button" style="vertical-align:middle"><span>New User? </span></button>
+
+</center>
+</form>
+<big><big><br>
+</big></big></div>
+</body>
+</html>
+
+
